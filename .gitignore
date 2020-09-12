@@ -1,2 +1,2 @@
 # Ignore archived server info, just in case
-archives/
+archives/server/*
