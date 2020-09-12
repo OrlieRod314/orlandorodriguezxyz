@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html$if(lang)$ lang="$lang$"$endif$>
+	<head>
+		<link rel="stylesheet" href="/css/styles.css">
+		<link rel="icon"
+		      href="/favicon.ico"
+		      type="image/x-icon">
+		$for(author-meta)$
+		<meta name="author" content="author-meta" />
+		$endfor$
+		$if(date-meta)$
+		<meta name="dcterms.date" content="date-meta" />
+		$endif$
+		<title>$title$</title>
+	</head>
+	<body>
+		<header>
+			<h1 class="title">$title$</h1>
+		</header>
+		<?php
+			    include "../src/navbar.php";
+		?>
+		$if(warning)$
+		<div class="container warning">
+			$warning$
+		</div>
+		$endif$
+		<div class="container info">
+			$if(toc)$
+			<div class="container toc">
+				$table-of-contents$
+			</div>
+			$endif$
+			$if(meta)$
+			<div class="container meta">
+				<div class="post-date">
+					$date$
+				</div>
+				$meta$
+			</div>
+			$endif$
+		</div>
+		<div class="container main">
+			$body$
+			$if(notes)$
+			<hr>
+			<div class="post-notes">
+				$notes$
+			</div>
+			$endif$
+		</div>
+		$if(free)$
+		<div class="container free">
+			$free$
+		</div>
+		$endif$
+	</body>
+</html>
