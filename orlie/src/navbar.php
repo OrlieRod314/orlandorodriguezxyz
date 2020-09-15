@@ -1,7 +1,7 @@
 <?php
 echo '<nav>
         <ul>
-                <li><a href="https://www.orlandorodriguez.xyz"><img border="0" alt="Home" src="/favicon.ico" width="40" height="40"></a></li>
+				<li><a href="https://www.orlandorodriguez.xyz" style="font-family:kanzlei_initialen;color:lime;font-size:5em;border:0px;">O</a></li>
 				<hr><p>Personal</p>
 				<li><a href="/meta/about-me.php">Me</a></li>
 				<li><a href="/meta/about-this-site.php">Site</a></li>
