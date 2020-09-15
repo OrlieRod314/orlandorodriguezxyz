@@ -18,8 +18,7 @@
             ?>
         <div class="container main">
             <h2 id="welcome">Welcome!</h2>
-            <p>Writer, blogger and programmer. Articles about my hobbies, projects, and programs. Sometimes an opinionated or informational piece.</p>
-            <p>This is a site about my interests, projects, and other stuff. Visitors and critiques are welcome!</p>
+            <p>Writer, blogger and programmer. Articles about my hobbies, projects, and programs. Sometimes an opinionated or informational piece. Expect frequent updates.</p>
         </div>
         <div class="container free">
             <h2 id="popular">Popular</h2>
