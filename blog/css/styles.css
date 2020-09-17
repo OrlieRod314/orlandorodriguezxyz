@@ -40,6 +40,16 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'cloister_black';
+    src: url('/css/fonts/cloisterblack-webfont.woff2') format('woff2'),
+         url('/css/fonts/cloisterblack-webfont.woff') format('woff'),
+         url('/css/fonts/cloisterblack-webfont.ttf') format('truetype'),
+         url('/css/fonts/cloisterblack-webfont.svg#cloisterblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 ::selection {
 	color: black;
 	background: darkorange;
