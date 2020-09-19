@@ -105,7 +105,8 @@ h1 {
 }
 
 p {
-	text-indent: 12px;
+	text-indent: 2.5em;
+    line-height: 1.4em;
 }
 
 code {
@@ -124,6 +125,7 @@ pre {
 	margin-right: 150px;
 	padding: 10px;
 	border: 1px solid lightgray;
+    font-size: 12px;
 	cursor: text;
 	max-height: calc(100vh - 8 em);
 }
@@ -214,7 +216,9 @@ nav li a:hover:not(.active) {
 .container h2 {
 	color: lightgray;
     font-variant: small-caps;
-    font-size: 30px;
+    font-weight: bolder;
+    text-align: right;
+    font-size: 2.25em;
 	border-bottom: 1px solid lightgray;
 }
 
