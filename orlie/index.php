@@ -41,7 +41,7 @@
             </ul>
             <h2 id="school">School</h2>
             <ul>
-                <!--<li><a href="/posts/getting-into-good-school.php">Getting Into a Good School</a></li> -->
+                <li><a href="/posts/getting-into-good-school.php">Getting Into a Good School</a></li>
             </ul>
             <h2 id="investigation">Investigations</h2>
             <ul>

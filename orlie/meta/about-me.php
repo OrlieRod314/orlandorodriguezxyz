@@ -44,7 +44,7 @@
 			<h2 id="personal">Personal</h2>
    <h3 id="school">School</h3>
    <p>I am currently a student at the University of Arizona studying Computer Science, as well as Statistics &amp; Data Science with a minor in Spanish. How do I have time to study two fields? Well that's because of the 52 credits I transferred from high school. So, although I am in my second year, I am a senior by credit definition.</p>
-   <p>Out of the two fields however, I definitely care more about Computer Science and do better in it as a result. I may get a minor in SDS if it doesn’t go well. Currently I am in the Honors College. However, graduating with Honors will be difficult as the requirements ignore AP credit for required classes.</p>
+   <p>Out of the two fields however, I definitely care more about Computer Science and do better in it as a result. I may get a minor in SDS if it doesn’t go well. Currently I am in the Honors College. </p>
    <h3 id="hobbies">Hobbies</h3>
    <p>Software and Web Development are my favorite creative hobbies. I enjoy making software and content for others to enjoy and implement. On the side I may dabble in hobbyist electronics. I also enjoy learning languages and am fluent in English and Spanish. Cybersecurity is also an interesting hobby of mine, as I am part of a cyber security club on campus.</p>
    <p>Aside from intellectual pursuits, I am also heavily involved in my school’s fencing club. I am the secretary and site designer of UA Wildcat Fencing, although the site isn’t up yet as we haven’t acquired the domain. Although I am currently a U rank, I think I’m well on my way to earning a rank as soon as tournaments open up again.</p>
