@@ -71,7 +71,7 @@ a {
 
 body {
 	color: lightgray;
-	background-color: #191919;
+	background-color: black;
 	margin: 0;
 	font: 14px "source_serif_proregular", Arial, sans-serif;
     cursor:url("/css/cursors/cursor.cur"), auto;
@@ -97,7 +97,7 @@ p {
 }
 
 code {
-	background: #2d2d2d;
+	background: #222;
 	color: lime;
 	border: 1px outset lime;
 	border-radius: 3px;
@@ -129,7 +129,7 @@ th, td {
 }
 
 th {
-	background-color: #2d2d2d;
+	background-color: #222;
 }
 
 nav ul {
@@ -141,7 +141,7 @@ nav ul {
 	margin-top: 20px;
 	padding: 0;
 	width: 15%;
-	background-color: #2d2d2d;
+	background-color: #222;
 	position: fixed;
 	left: 0;
 	overflow: auto;
@@ -215,7 +215,7 @@ nav li a:hover:not(.active) {
 	margin-top: 20px;
 	font-style: italic;
 	border-color: OrangeRed;
-	background-color: #2d2d2d;
+	background-color: #222;
 }
 
 .info {
@@ -274,7 +274,7 @@ nav li a:hover:not(.active) {
 	margin: 1px;
 	border: 1px outset;
 	border-color: lightgray;
-	background-color: #2d2d2d;
+	background-color: #222;
     padding-left: 0;
     padding-right: 0;
     width: 30%;
