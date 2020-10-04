@@ -164,9 +164,15 @@ nav ul {
 }
 
 nav ul p {
+    color: gray;
     margin-top: 0;
     margin-bottom: 0;
+    margin-left: -2em;
     text-align: left;
+}
+
+nav ul p::after {
+    content: ":";
 }
 
 nav ul h4 {

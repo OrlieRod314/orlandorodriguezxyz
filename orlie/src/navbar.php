@@ -1,6 +1,7 @@
 <?php
 echo '<nav>
         <ul>
+                <p style="padding-top: 2px;">Home</p>
 				<li><a href="https://www.orlandorodriguez.xyz" style="font-family:cloister_black;color:lightgray;font-size:6em;border:0px;padding:0px;">O</a></li>
 				<hr><p>Personal</p>
 				<li><a href="/meta/about-me.php">Me</a></li>
