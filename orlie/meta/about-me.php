@@ -37,10 +37,11 @@
 				<div class="post-date">
                     July 01, 2020
 				</div>
-				<p>Who am I and what do I do? A collection of contact info, personal details, and personal projects I’ve been pursuing.</p>
+				<p>Who am I and what do I do? A collection of contact info, personal details, and personal projects I’ve been pursuing. A couple of details about my interests and hobbies that I don't really post about anywhere else.</p>
 			</div>
 					</div>
 		<div class="container main">
+	<p>Since the site's inception, I've tried to maintain a clear separation between the personal and professional aspects of my life. I will keep all my personal details on this singular page. It's easier to keep track of what people know about me if it's all in one place that I control.</p>
 			<h2 id="personal">Personal</h2>
    <h3 id="school">School</h3>
    <p>I am currently a student at the University of Arizona studying Computer Science, as well as Statistics &amp; Data Science with a minor in Spanish. How do I have time to study two fields? Well that's because of the 52 credits I transferred from high school. So, although I am in my second year, I am a senior by credit definition.</p>
