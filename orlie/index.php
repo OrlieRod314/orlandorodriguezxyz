@@ -17,7 +17,8 @@
             include "src/navbar.php";
             ?>
         <div class="container main">
-            <p style="font-variant: small-caps; font-size: 20px; text-indent: 0;"><span style="font: 100px goudy_initialen; padding-right: 4px; float:left;">W</span>riter, blogger and programmer. Articles about my hobbies, projects, and programs. This is the official site of <a href="https://orlandorodriguez.xyz/meta/about-me">Orlando Rodriguez</a>. My writing here will be quite diverse. Sometimes I may write an opinionated or informational piece. I may even co-author an article with a friend. If you are looking for more "personal" posts, then I would suggest checking out the <a href="https://www.blog.orlandorodriguez.xyz">blog</a>. All the other food-for-thought and serious posts will be on here. So expect frequent updates.</p>
+            <p style="font-variant: small-caps; font-size: 20px; text-indent: 0;">Writer, blogger and programmer. Articles about my hobbies, projects, and programs. This is the official site of <a href="https://orlandorodriguez.xyz/meta/about-me">Orlando Rodriguez</a>. </p>
+            <p>My writing here will be quite diverse. Sometimes I may write an opinionated or informational piece. I may even co-author an article with a friend. If you are looking for more "personal" posts, then I would suggest checking out the <a href="https://www.blog.orlandorodriguez.xyz">blog</a>. All the other food-for-thought and serious posts will be on here. So expect frequent updates.</p>
         </div>
         <div class="container free">
             <h2 id="popular">Popular</h2>
