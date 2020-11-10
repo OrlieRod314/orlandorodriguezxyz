@@ -54,6 +54,18 @@
    <p>Then I move the file to its respective place in the local site repository. I will usually run an archiving script to save the site to an archive folder, just in case I screw it up somehow. If everything is backed up, I then run the updating script to update the server.</p>
    <h2 id="going-forward">Going Forward</h2>
    <p>I plan on keeping this site rather simple and not having too much functionality on it. I just want it to be informative and useful for anyone trying to find out more about me. I will probably configure a Git Server and Email Server later on so that I can communicate and host projects on here without having to depend on too many outside services.</p>
-					</div>
+                    </div>
+<div class="container" id="comments">
+
+    <?php 
+    $name = "about-this-site";
+    include "../src/comments.php"; 
+    ?>
+
+    </div>
+    <script type="text/javascript">
+    var n = 'about-this-site';
+    document.write('<script type="text/javascript" src="../src/comments.js"><\/script>');
+    </script>
 			</body>
 </html>

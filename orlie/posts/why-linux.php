@@ -150,5 +150,17 @@
             <p>Seriously consider giving Linux a try.</p>
          </div>
       </div>
+<div class="container" id="comments">
+
+    <?php 
+    $name = "why-linux";
+    include "../src/comments.php"; 
+    ?>
+
+    </div>
+    <script type="text/javascript">
+    var n = 'why-linux';
+    document.write('<script type="text/javascript" src="../src/comments.js"><\/script>');
+    </script>
    </body>
 </html>

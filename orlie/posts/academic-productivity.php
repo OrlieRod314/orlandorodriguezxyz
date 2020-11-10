@@ -116,5 +116,17 @@ Ok thank you Mr. Heuristic!
    <p>As cool as productivity is, it’s also dangerous to overindulge in self-improvement. Self-improvement is just a buzzword used to market otherwise genuinely good life advice. Some people will make it their life goal to be some workaholic productivity beast. That’s a very shallow lifestyle.</p>
    <p>Self-improvement is really a matter of knowing what to do and doing it. It’s as simple as that. This advice is for people who are in a rut. They may struggle with finding the motivation to do something, or they may spend too much time on meaningless tasks and are looking for something meaningful to do. Or they may simply want to squeeze a little more juice out of their day.</p>
 					</div>
+<div class="container" id="comments">
+
+    <?php 
+    $name = "academic-productivity";
+    include "../src/comments.php"; 
+    ?>
+
+    </div>
+    <script type="text/javascript">
+    var n = 'academic-productivity';
+    document.write('<script type="text/javascript" src="../src/comments.js"><\/script>');
+    </script>
 			</body>
 </html>

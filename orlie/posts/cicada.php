@@ -363,5 +363,17 @@ We will email you a number within the next few days (in the order in which you a
 				<p>If you haven’t been able to tell, the central theme of this whole mystery is <a href="https://en.wikipedia.org/wiki/Matter_of_Britain">The Matter of Britain</a> with all the references to Arthurian legend and the Mabinogian.</p>
 			</div>
 					</div>
+<div class="container" id="comments">
+
+    <?php 
+    $name = "cicada";
+    include "../src/comments.php"; 
+    ?>
+
+    </div>
+    <script type="text/javascript">
+    var n = 'cicada';
+    document.write('<script type="text/javascript" src="../src/comments.js"><\/script>');
+    </script>
 			</body>
 </html>

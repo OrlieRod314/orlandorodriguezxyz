@@ -185,5 +185,17 @@
                 <p>Also, if you’re already doing these things and want to go to a top school anyways, then good for you! Remember that there’s no formula for getting in, and you’re always better off doing what you like instead of what you’re told.</p>
             </div>
         </div>
+<div class="container" id="comments">
+
+    <?php 
+    $name = "getting-into-good-school";
+    include "../src/comments.php"; 
+    ?>
+
+    </div>
+    <script type="text/javascript">
+    var n = 'getting-into-good-school';
+    document.write('<script type="text/javascript" src="../src/comments.js"><\/script>');
+    </script>
 	</body>
 </html>

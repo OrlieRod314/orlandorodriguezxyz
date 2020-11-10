@@ -13,9 +13,7 @@
 		<header>
 			<h1 class="title">Orlix: An Arch Linux Configuration Made for the Average CS Student</h1>
 		</header>
-		<?php
-			    include "../src/navbar.php";
-		?>
+		<?php include "../src/navbar.php"; ?>
 				<div class="container warning">
 			<p>I would highly suggest <em>against</em> completely replacing your OS with Linux at first, especially with a minimalist distro like Arch, Gentoo, or Void. Starting with something simple like Ubuntu on a virtual machine is the best choice for a beginner. It’s a low-stakes way to begin and won’t make you lose all your stuff. Starting with Arch is a very good way to lose your confidence and convince yourself that you’re not good at CS.</p>
 		</div>
@@ -140,5 +138,17 @@
     </ul>
 			</div>
 					</div>
-			</body>
+    <div class="container" id="comments">
+
+    <?php 
+    $name = "orlix";
+    include "../src/comments.php"; 
+    ?>
+
+    </div>
+    <script type="text/javascript">
+    var n = 'orlix';
+    document.write('<script type="text/javascript" src="../src/comments.js"><\/script>');
+    </script>
+	</body>
 </html>

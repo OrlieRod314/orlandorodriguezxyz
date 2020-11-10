@@ -84,6 +84,18 @@
             			<div class="post-notes">
                 <p>Before you get mad and tell me that it’s not feasible for everyone to use LaTeX, let me just say that I agree. I don’t think that everyone should use LaTeX because it’s simply not worth the time investment for some users. However, at least get LibreOffice or something that won’t charge you. If you absolutely need a GUI to write documents, use something free.</p>
             </div>
-            		</div>
+                    </div>
+<div class="container" id="comments">
+
+    <?php 
+    $name = "vim-latex";
+    include "../src/comments.php"; 
+    ?>
+
+    </div>
+    <script type="text/javascript">
+    var n = 'vim-latex';
+    document.write('<script type="text/javascript" src="../src/comments.js"><\/script>');
+    </script>
 	</body>
 </html>

@@ -7,6 +7,7 @@
             type="image/x-icon">
         <meta name="author" content="Orlando Rodriguez" />
         <meta name="dcterms.date" content="2020-07-01" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Orlando Rodriguez</title>
     </head>
     <body>
@@ -52,5 +53,17 @@
             <ul>
             </ul>
         </div>
+    <div class="container" id="comments">
+
+    <?php 
+    $name = "index";
+    include "src/comments.php"; 
+    ?>
+
+    </div>
+    <script type="text/javascript">
+    var n = 'index';
+    document.write('<script type="text/javascript" src="src/comments.js"><\/script>');
+    </script>
     </body>
 </html>

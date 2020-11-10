@@ -53,7 +53,6 @@
    <p>I am also an Osu! player and can consistently complete 4-stars. I use the S620 Gaomon tablet and Whitecat skin.</p>
    <h3 id="personality">Personality</h3>
    <p>According to the MBTI, I have an Introverted, Intuitive, Thinking, and Judging <a href="https://www.16personalities.com/intj-personality">(INTJ)</a> personality. I like getting things done and being useful, so I guess I fit the definition.</p>
-   <p>After doing some research, I realized I share personality types with some pretty interesting anime characters. Lelouch vi Britannia from Code Geass, and Light/Near from Death Note. I’ve always identified with these characters so I guess it makes sense.</p>
    <p>Big Five Personality Inventory:</p>
    <ul>
    <li>Openness to Experience: 3.9/3.9</li>
@@ -134,6 +133,18 @@ Uo3cgl83nEqoDMckw+KY0yILpdbSqm61MAY1PJg=
         <p>Orlix running on T420 with cool space aesthetics</p>
         </div>
     </div>
-					</div>
+                    </div>
+<div class="container" id="comments">
+
+    <?php 
+    $name = "about-me";
+    include "../src/comments.php"; 
+    ?>
+
+    </div>
+    <script type="text/javascript">
+    var n = 'about-me';
+    document.write('<script type="text/javascript" src="../src/comments.js"><\/script>');
+    </script>
 			</body>
 </html>

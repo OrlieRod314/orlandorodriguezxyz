@@ -59,4 +59,16 @@
         <p>Up next, I may start focusing on setting up a Git server and maybe dabble in some front-end development so I can make cooler-looking sites. I might also experiment with databases so you guys can start making comments and stuff. Will definitely take a while lol. Also, I could stand to learn some PHP for the sake of efficiency.</p>
     </div>
 </div>
+<div class="container" id="comments">
+
+    <?php 
+    $name = "good-practices";
+    include "../src/comments.php"; 
+    ?>
+
+    </div>
+    <script type="text/javascript">
+    var n = 'good-practices';
+    document.write('<script type="text/javascript" src="../src/comments.js"><\/script>');
+    </script>
 </body></html>

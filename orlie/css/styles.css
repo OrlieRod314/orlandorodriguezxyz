@@ -290,6 +290,27 @@ nav li a:hover:not(.active) {
     border: 2px solid lightgray;
 }
 
+#comments {
+    border: none;
+}
+
+#comments fieldset {
+    background-color: #2d2d2d;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid lime;
+}
+
+#comments legend {
+    font-style: italic;
+}
+
+input {
+    background-color: #2d2d2d;
+    border: 1px solid lime;
+    color: lightgray;
+}
+
 .toc {
 	width: 30%;
 	padding-top: 0px;
