@@ -299,16 +299,33 @@ nav li a:hover:not(.active) {
     padding: 10px;
     margin-bottom: 5px;
     border: 1px solid lime;
+    font-family: "Courier New", Courier, monospace;
 }
 
 #comments legend {
-    font-style: italic;
+    font-family: "Courier New", Courier, monospace;
 }
 
 input {
     background-color: #2d2d2d;
     border: 1px solid lime;
     color: lightgray;
+    font-family: "Courier New", Courier, monospace;
+}
+
+button {
+    margin: 10px;
+    border: 1px solid lightgray;
+    background-color: #2d2d2d;
+    color: lightgray;
+    font-family: "Courier New", Courier, monospace;
+    transition: .5s;
+}
+
+button:hover {
+    background-color: lightgray;
+    color: black;
+    /* box-shadow: 0 0 15px #ffffff; */
 }
 
 .toc {

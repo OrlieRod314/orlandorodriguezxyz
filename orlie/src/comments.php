@@ -25,7 +25,7 @@ if (!$dbconnect) {
 
 
 if (isset($_GET["user"]) && isset($_GET["comment"])) {
-    $vals = "( '" . $_GET["user"] . "', '" . $_GET["comment"] . "', '" . $article . "' )";
+    $vals = "( '" . htmlspecialchars($_GET["user"]) . "', '" . htmlspecialchars($_GET["comment"]) . "', '" . $article . "' )";
     $sql = "INSERT INTO Comments (User, Comment, Article) VALUES " . $vals;
 
     mysqli_query($dbconnect, $sql);
