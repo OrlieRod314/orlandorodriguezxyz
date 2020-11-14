@@ -1,5 +1,4 @@
 <h2> Comments</h2>
-<bold>Add a comment!</bold>
 <fieldset>
 <legend><input id="user" type="text" placeholder="Input name"></legend>
 <input id="comment" type="text" placeholder="Input comment text">
