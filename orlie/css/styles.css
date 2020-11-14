@@ -303,7 +303,8 @@ nav li a:hover:not(.active) {
 }
 
 #comments legend {
-    font-family: "Courier New", Courier, monospace;
+	font: 15px "source_serif_probold", Arial, sans-serif;
+    font-variant: small-caps;
 }
 
 input {
@@ -318,7 +319,9 @@ button {
     border: 1px solid lightgray;
     background-color: #2d2d2d;
     color: lightgray;
-    font-family: "Courier New", Courier, monospace;
+    /*font-family: "Courier New", Courier, monospace;*/
+	font: 15px "source_serif_probold", Arial, sans-serif;
+    font-variant: small-caps;
     transition: .5s;
 }
 
