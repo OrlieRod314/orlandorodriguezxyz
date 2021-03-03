@@ -96,6 +96,60 @@
       <li>Fingerprint: <code>A50D D5EB 3857 42F9 19F5 04B6 937F C0CE 10C7 B41A</code></li>
       <li>Key ID: <code>10C7B41A</code></li>
       </ul>
+<pre> 
+-----BEGIN PUBLIC KEY BLOCK-----
+
+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
+=XH3g
+-----END PGP PUBLIC KEY BLOCK-----
+</pre>
       <h1 id="stack">Stack</h1>
       <h2 id="external-pc-specs">External PC Specs</h2>
       <p>As of January 2021, I use a PC I built by myself. I have a 1440p Pixio main monitor, and an 1080p portrait mode monitor to the right side. I use the second monitor for scrolling through Discord or reading. Most of my peripherals are <a href="https://www.razer.com/">Razer</a> brand, but my keyboard is a <a href="https://www.pcgamingrace.com/products/gmmk-full-brown-switch">GMMK</a> from <a href="https://www.pcgamingrace.com/">Glorious PC Gaming Race</a>. I use a <a href="https://www.tonormic.com/collections/usb-microphones/products/tonor-tc-777-usb-microphone">TONOR TC-777</a> microphone.</p>

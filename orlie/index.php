@@ -27,7 +27,7 @@
 		</div>
 		<div id="main">
 			<p>
-				Writer, blogger and programmer. Articles about my hobbies, projects, and programs. This is the official site of <a href="https://orlandorodriguez.xyz/me">Orlando Rodriguez</a>. 	
+				Writer, blogger and programmer. Articles about my hobbies, projects, and programs. This is the official site of <a href="articles/about-me.php">Orlando Rodriguez</a>. 	
 			</p>
 			
 			<p>
