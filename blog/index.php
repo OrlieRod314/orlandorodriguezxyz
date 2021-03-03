@@ -1,47 +1,53 @@
 <!DOCTYPE html>
-<html lang="en-US">
-	<head>
-		<link rel="stylesheet" href="/css/styles.css">
-		<link rel="icon"
-		      href="/favicon.ico"
-		      type="image/x-icon">
-				<meta name="author" content="author-meta" />
-						<meta name="dcterms.date" content="date-meta" />
-				<title>Orlando’s Blog</title>
-	</head>
-	<body>
-		<header>
-			<h1 class="title">Orlando’s Blog</h1>
-		</header>
-		<?php
-			    include "src/navbar.php";
-		?>
-				<div class="container info">
-						<div class="container toc">
+<html>
+<head>
+<link rel="stylesheet" href="css/style.css">
+<title>Orlando's Blog</title>
+</head>
+<body>
+	<?php 
+	   include 'chunks/sidebar.php';
+	?>
+	<header id="top">
+		<h1>My Blog</h1>
+	</header>
+	<article>
+		<div id="page-metadata">
+			<p>
+			<span id="page-authors">
+				<span><em>Orlando Rodriguez</em></span>
+			</span><br>
+			<span id="page-metadata-block">
+				
+				<span id="page-date-range"><em>Aug 10, 2020</em></span>
+				<span id="page-status"><em>updated</em></span>
+				<span id="page-importance"><em>10</em></span>
+			</span>
+			</p>	
+		</div>
+		<div id="main">
+			<p>
+			Welcome to my blog! Here I’ll be posting cool things about the stuff I do and other personal things that don’t really have a place on my more serious main site.
+			</p>
+			
+			<h1>Updates</h1>
+			<p>Not much as of late, just doing homework and looking for internships.</p>
+			<h1>Entries</h1>
+			<section>
+				<h1>2020</h1>
 				<ul>
-    <li><a href="#updates">Updates</a></li>
-    <li><a href="#entries">Entries</a>
-    <ul>
-    <li><a href="#section">2020</a></li>
-    </ul></li>
-    </ul>
-			</div>
-									<div class="container meta">
-				<div class="post-date">
-					August 10, 2020
-				</div>
-    <p>Welcome to my blog. Here I’ll be posting cool things about the stuff I do and other personal things that don’t really have a place on my more serious main site.</p>
-			</div>
-					</div>
-		<div class="container main">
-			<h2 id="updates">Updates</h2>
-   <p>This school year is going alright I guess, not much of note. Zoom classes aren’t the worst, it’s better than just being on campus all day and running the risk of getting sick.</p>
-   <h2 id="entries">Entries</h2>
-   <p>This is a chronological list of all entries of my blog.</p>
-   <h3 id="section">2020</h3>
-   <ul>
-   <li><a href="/entries/a_new_year.php">A New School Year</a></li>
-   </ul>
-					</div>
-			</body>
+					<li><a href="articles/a-new-year.php">A New School Year</a></li>
+				</ul>
+			</section>
+			<section>
+				<h1>2021</h1>
+				<ul>
+					<li><a href="articles/second-semester.php">The Second Semester</a></li>
+				</ul>
+			</section>
+		</div>
+	</article>
+</body>
 </html>
+<?php
+?>

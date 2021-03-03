@@ -1,0 +1,154 @@
+\documentclass[letterpaper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[colorlinks=true,urlcolor=RoyalBlue]{hyperref}
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage[margin=.75in]{geometry}
+\usepackage{longtable}
+\usepackage{enumitem}
+\usepackage[document]{ragged2e}
+
+%Setting the right font:
+\renewcommand*\rmdefault{iwona}
+\thispagestyle{empty}
+\setlist[itemize]{nosep}
+
+%Defining Entry:
+\newcommand{\entry}[5]{
+    \hfill\vline\hfill
+    \begin{minipage}[t]{.80\textwidth}
+    
+        \textbf{\textsc{#3}}
+        
+        %\textit{#4}
+        #4
+        
+        \footnotesize{#1}
+    \end{minipage}
+    \hfill\vline\hfill
+    \begin{minipage}[t]{.15\textwidth}
+        #2
+        
+        \footnotesize{#5}
+    \end{minipage}\\\vspace{.1cm}
+}
+
+%Macros
+\newcommand{\ua}{University of Arizona}
+\newcommand{\uahc}{University of Arizona Honors College}
+\newcommand{\town}{Tucson, Arizona}
+\newcommand{\contact}{\href{mailto:orlandorodriguezosr@protonmail.ch}{orlandorodriguezosr@protonmail.ch}}
+\newcommand{\site}{\href{https://www.orlandorodriguez.xyz}{orlandorodriguez.xyz}}
+\newcommand{\git}{\href{https://www.github.com/OrlieRod314}{GitHub: OrlieRod314}}
+\newcommand{\dpsite}{\href{https://www.dimensionalplates.com}{dimensionalplates.com}}
+\newcommand{\wcfsite}{\href{https://www.uawildcatfencing.com}{uawildcatfencing.com}}
+
+%Titlesec
+\titleformat{\section}
+{\Large\scshape\raggedright}
+{}
+{.5em}
+{}[\titlerule]
+\titlespacing{\section}{0pt}{5pt}{3pt}
+
+\titleformat{\subsubsection}
+{\itshape}
+{}
+{0em}
+{}
+
+\titlespacing{\subsubsection}
+{0em}
+{0em}
+{0em}
+ 
+\titleformat{\paragraph}
+{\bfseries\large}
+{\hspace{0in}}
+{0em}
+{}
+
+%Command Renewals
+\renewcommand{\maketitle}{
+\begin{center}
+{\LARGE
+\theauthor}
+\vspace{.1em}
+
+\contact\\\site\\\git
+
+\end{center}
+}
+
+%Start of Document
+\begin{document}
+\pagenumbering{gobble}
+\title{R\'esum\'e}
+\author{ORLANDO RODRIGUEZ}
+
+\maketitle
+\section{Education}
+\entry{\uahc}{2023}{BS in Computer Science, Data Science \& Minor in Spanish Language}{}{\town}
+
+\section{Skills}
+\begin{center}
+\setlength{\tabcolsep}{10pt} % Default value: 6pt
+\renewcommand{\arraystretch}{1.5} % Default value: 1
+\begin{tabular}{ccccccc}
+ C & Java & Python & Bash/Shell Scripting &HTML \\
+ CSS/Bootstrap & JS/ReactJS & PHP & SQL & nginx\\
+{\LaTeX} & Markdown & VBox & Linux & HPC Clusters\\
+
+\end{tabular}
+\end{center}
+
+\section{Experience}
+
+\entry{\ua}{2020}{Symmetry Detection and Classification in Drawings of Graphs}{Research Assistant}{\town}
+\begin{itemize}
+   	\item Implemented Graph Neural Networks to classify common and abstract symmetries in graph drawings
+    \item Deployed Neural Network models using programs written in collaboration with research team
+    \item Utilized High-Performance Computing cluster to regularly conduct intensive Neural Network training and prediction experiments
+	\item Applied Linux knowledge to create job scripts with PBS directives
+\end{itemize}
+
+\entry{\ua}{2019-Present}{UA Cybercats}{Member}{\town}
+\begin{itemize}
+    \item Participated in hacking competitions and learned about Offensive Security
+	\item Experienced with Kali Linux
+\end{itemize}
+
+\entry{}{2020}{Created Linux Distribution}{Creator of Orlix}{}
+\begin{itemize}
+        \item Configured Arch Linux variant featured on \site
+    	\item Designed to be lightweight with emphasis on high-speed development and deployment
+\end{itemize}
+
+\entry{}{2018-Present}{Web Design}{Creator of {\site}}{}
+\begin{itemize}
+    \item Manage both front/back-end with LEMP stack
+    \item Feature current projects and link to Github
+    \item Frequently publish articles about computer science, statistics, technology, and philosophy
+\end{itemize}
+
+\section{Leadership Experience}
+
+\entry{\ua}{2019-Present}{Wildcat Épée Fencing Club}{Secretary}{\town}
+\begin{itemize}
+   	\item Represent the university by traveling across the country to tournaments 
+   	\item Regularly compile team statistics, track attendance, and handle logistics
+    \item Negotiate with university officials and campus recreation to approve events
+    \item Interact daily with members to create a fun team environment 
+	\item Manage the team website at \wcfsite
+\end{itemize}
+
+\section{Awards and Honors}
+
+%\entry{}{March 2019}{Texas Instruments 3rd Place High School Award}{}{}
+%\begin{itemize}
+%    \item Awarded at Southern Arizona Research Science and Engineering Foundation
+%\end{itemize}
+\entry{}{2019}{National Merit Hispanic Scholar 2019}{}{}
+
+\end{document}

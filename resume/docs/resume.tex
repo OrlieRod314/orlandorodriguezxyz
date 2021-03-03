@@ -1,52 +1,41 @@
 \documentclass[letterpaper,10pt]{article}
-\usepackage[utf8]{inputenc}
-\usepackage[dvipsnames]{xcolor}
-\usepackage[colorlinks=true,urlcolor=RoyalBlue]{hyperref}
 \usepackage{titlesec}
 \usepackage{titling}
-\usepackage[margin=.75in]{geometry}
+\usepackage[margin=.5in]{geometry}
+\usepackage[showboxes]{textpos}
+\usepackage{calc}
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[colorlinks=true,urlcolor=RoyalBlue]{hyperref}
 \usepackage{longtable}
 \usepackage{enumitem}
 \usepackage[document]{ragged2e}
+\usepackage{tabbing}
+\usepackage{graphicx}
+\usepackage{xcolor}
+
+
+\geometry {
+	tmargin = 0mm,
+	left = 5mm,
+	right = 5mm,
+	bmargin = 0mm,
+}
+
+\setlength{\TPHorizModule}{\columnwidth/10}
+\setlength{\TPVertModule}{\baselineskip}
+
+\TPMargin{5px}
 
 %Setting the right font:
 \renewcommand*\rmdefault{iwona}
 \thispagestyle{empty}
 \setlist[itemize]{nosep}
 
-%Defining Entry:
-\newcommand{\entry}[5]{
-    \hfill\vline\hfill
-    \begin{minipage}[t]{.80\textwidth}
-    
-        \textbf{\textsc{#3}}
-        
-        %\textit{#4}
-        #4
-        
-        \footnotesize{#1}
-    \end{minipage}
-    \hfill\vline\hfill
-    \begin{minipage}[t]{.15\textwidth}
-        #2
-        
-        \footnotesize{#5}
-    \end{minipage}\\\vspace{.1cm}
-}
-
-%Macros
-\newcommand{\ua}{University of Arizona}
-\newcommand{\uahc}{University of Arizona Honors College}
-\newcommand{\town}{Tucson, Arizona}
-\newcommand{\contact}{\href{mailto:orlandorodriguezosr@protonmail.ch}{orlandorodriguezosr@protonmail.ch}}
-\newcommand{\site}{\href{https://www.orlandorodriguez.xyz}{orlandorodriguez.xyz}}
-\newcommand{\git}{\href{https://www.github.com/OrlieRod314}{GitHub: OrlieRod314}}
-\newcommand{\dpsite}{\href{https://www.dimensionalplates.com}{dimensionalplates.com}}
-\newcommand{\wcfsite}{\href{https://www.uawildcatfencing.com}{uawildcatfencing.com}}
-
 %Titlesec
 \titleformat{\section}
-{\Large\scshape\raggedright}
+{\Large\scshape\raggedright\bfseries}
 {}
 {.5em}
 {}[\titlerule]
@@ -69,86 +58,228 @@
 {0em}
 {}
 
-%Command Renewals
-\renewcommand{\maketitle}{
-\begin{center}
-{\LARGE
-\theauthor}
-\vspace{.1em}
+%Macros
+\newcommand{\me}{Orlando Rodriguez}
+\newcommand{\ua}{University of Arizona}
+\newcommand{\uahc}{University of Arizona Honors College}
+\newcommand{\cs}{BS - Computer Science}
+\newcommand{\sds}{BS - Statistics and Data Science}
+\newcommand{\esp}{Spanish}
+\newcommand{\gpa}{3.372}
+\newcommand{\mgpa}{3.3}
+\newcommand{\town}{Tucson,\\ Arizona}
+\newcommand{\email}{\href{mailto:orlandorodriguezosr@protonmail.ch}{orlandorodriguezosr@protonmail.ch}}
+\newcommand{\schoolemail}{\href{mailto:orodriguez@email.arizona.edu}{orodriguez@email.arizona.edu}}
+\newcommand{\mobile}{\href{tel:15204813485}{+1 (520)-481-3485}}
+\newcommand{\site}{\href{https://www.orlandorodriguez.xyz}{orlandorodriguez.xyz}}
+\newcommand{\git}{\href{https://www.github.com/OrlieRod314}{OrlieRod314}}
+\newcommand{\dpsite}{\href{https://www.dimensionalplates.com}{dimensionalplates.com}}
+\newcommand{\wcfsite}{\href{https://www.uawildcatfencing.com}{uawildcatfencing.com}}
 
-\contact\\\site\\\git
+%	\newcommand{\skills}{
+%		\section{Languages}
+%		\begin{center}
+%		\setlength{\tabcolsep}{9pt} % Default value: 6pt
+%		\renewcommand{\arraystretch}{1.5} % Default value: 1
+%		\begin{tabular}{cccc}
+%	
+%		\logo{java.png} & \logo{python.png} &\logo{bash.png} &\logo{sql.png}\\
+%		\logo{html.png} & \logo{css.png} & \logo{javascript.png} &\logo{php.jpg}\\
+%		\end{tabular}
+%		\end{center}
+%	
+%		\section{Other Technical Skills}
+%		\begin{center}
+%		\setlength{\tabcolsep}{3pt} % Default value: 6pt
+%		\renewcommand{\arraystretch}{1.5} % Default value: 1
+%		\begin{tabular}{ccccc}
+%	
+%		\logo{linux.png} & \logo{nginx.png} &\logo{vbox.png} & \logo{mariadb.png} & \logo{ml.png}\\
+%		 {\LaTeX} & HPC Clusters\\
+%		
+%		\end{tabular}
+%		\end{center}
+%	
+%		\section{Other Skills}
+%		\begin{center}
+%		\setlength{\tabcolsep}{3pt} % Default value: 6pt
+%		\renewcommand{\arraystretch}{1.5} % Default value: 1
+%		\begin{tabular}{ccc}
+%	
+%		Spanish (Reading/Writing/Speaking)\\
+%		Negotiation\\
+%		Conflict resolution\\
+%		Team administration\\
+%		
+%		\end{tabular}
+%		\end{center}
+%	}
 
-\end{center}
+\newcommand{\skills}{
+	\section{Languages}
+	\begin{center}
+	\setlength{\tabcolsep}{9pt} % Default value: 6pt
+	\renewcommand{\arraystretch}{1.5} % Default value: 1
+	\begin{tabular}{cccc}
+
+	Java & Python & Bash & SQL\\
+	HTML & CSS & JS & PHP\\
+	\end{tabular}
+	\end{center}
+
+	\section{Other Technical Skills}
+	\begin{center}
+	\setlength{\tabcolsep}{9pt} % Default value: 6pt
+	\renewcommand{\arraystretch}{1.5} % Default value: 1
+	\begin{tabular}{cccc}
+
+	Linux & nginx & VBox & MariaDB\\
+	 ML & {\LaTeX} & HPC\\
+	
+	\end{tabular}
+	\end{center}
+
+	\section{Other Skills}
+	\begin{center}
+	\setlength{\tabcolsep}{3pt} % Default value: 6pt
+	\renewcommand{\arraystretch}{1.5} % Default value: 1
+	\begin{tabular}{ccc}
+
+	Spanish (Reading/Writing/Speaking)\\
+	Negotiation\\
+	Conflict resolution\\
+	Team administration\\
+	
+	\end{tabular}
+	\end{center}
 }
 
-%Start of Document
+\newcommand{\personal} {
+	\vspace{.5em}
+	{\centerline{\LARGE \MakeUppercase{\me}}}
+	\vspace{.5em}
+	\field{emails}{\email \\\> \schoolemail}
+	\field{phone}{\mobile}
+	\field{site}{\site}
+	\field{Github}{\git}
+}
+
+\newcommand{\quickinfo}{
+	\section{Education}
+	\vspace{1.5em}
+	\field{school}{\ua}
+	\field{major}{\cs\\\>\sds}
+	\field{minor}{\esp}
+	\field{GPA}{\gpa}
+	\field{CS GPA}{\mgpa}
+	\vspace{\baselineskip/2}
+	\section{Preferences}
+	\vspace{1.5em}
+	\field{languages}{Java\\\> Python}
+	\field{editors}{Vim\\\> VSCode\\\> Eclipse IDE}
+	\field{subjects}{Software Development\\\> Back/Front End Development\\\> Machine Learning}
+	\vspace{\baselineskip/2}
+	\section{Awards}
+	\vspace{1em}
+	National Merit Hispanic Scholar 2019
+}
+
+\newcommand{\logo}[1]{
+	\includegraphics[width=10mm]{images/#1}
+}
+
+\newcommand{\field}[2]{
+	\vspace{-10px}
+	\begin{tabbing}
+		XXXXXXXX \= XXXXX \kill
+		#1: \> #2\\
+	\end{tabbing}
+	\vspace{-20px}
+}
+
+%Defining Entry:
+\newcommand{\entry}[5]{
+
+    \hfill\vline\hfill
+    \begin{minipage}[t]{.80\textwidth}
+    
+        %\textcolor{RoyalBlue}{\textbf{\textsc{#3}}}
+        \textbf{\textsc{#3}}\\
+        %\textit{#4}
+        #4
+        
+        \footnotesize{#1}
+    \end{minipage}
+    \hfill\vline\hfill
+    \begin{minipage}[t]{.15\textwidth}
+        #2
+        
+        \footnotesize{#5}
+    \end{minipage}\\\vspace{.1cm}
+}
+
 \begin{document}
-\pagenumbering{gobble}
-\title{R\'esum\'e}
-\author{ORLANDO RODRIGUEZ}
 
-\maketitle
-\section{Education}
-\entry{\uahc}{2023}{BS in Computer Science, Data Science \& Minor in Spanish Language}{}{\town}
+	\begin{textblock}{6.5}(10.5, 2)
+		\personal
+	\end{textblock}
 
-\section{Skills}
-\begin{center}
-\setlength{\tabcolsep}{10pt} % Default value: 6pt
-\renewcommand{\arraystretch}{1.5} % Default value: 1
-\begin{tabular}{ccccccc}
- C & Java & Python & Bash/Shell Scripting &HTML \\
- CSS/Bootstrap & JS/ReactJS & PHP & SQL & nginx\\
-{\LaTeX} & Markdown & VBox & Linux & HPC Clusters\\
+	\begin{textblock}{6.5}(10.5, 12)
+		\quickinfo
+	\end{textblock}
 
-\end{tabular}
-\end{center}
-
-\section{Experience}
-
-\entry{\ua}{2020}{Symmetry Detection and Classification in Drawings of Graphs}{Research Assistant}{\town}
-\begin{itemize}
-   	\item Implemented Graph Neural Networks to classify common and abstract symmetries in graph drawings
-    \item Deployed Neural Network models using programs written in collaboration with research team
-    \item Utilized High-Performance Computing cluster to regularly conduct intensive Neural Network training and prediction experiments
-	\item Applied Linux knowledge to create job scripts with PBS directives
-\end{itemize}
-
-\entry{\ua}{2019-Present}{UA Cybercats}{Member}{\town}
-\begin{itemize}
-    \item Participated in hacking competitions and learned about Offensive Security
-	\item Experienced with Kali Linux
-\end{itemize}
-
-\entry{}{2020}{Created Linux Distribution}{Creator of Orlix}{}
-\begin{itemize}
-        \item Configured Arch Linux variant featured on \site
-    	\item Designed to be lightweight with emphasis on high-speed development and deployment
-\end{itemize}
-
-\entry{}{2018-Present}{Web Design}{Creator of {\site}}{}
-\begin{itemize}
-    \item Manage both front/back-end with LEMP stack
-    \item Feature current projects and link to Github
-    \item Frequently publish articles about computer science, statistics, technology, and philosophy
-\end{itemize}
-
-\section{Leadership Experience}
-
-\entry{\ua}{2019-Present}{Wildcat Épée Fencing Club}{Secretary}{\town}
-\begin{itemize}
-   	\item Represent the university by traveling across the country to tournaments 
-   	\item Regularly compile team statistics, track attendance, and handle logistics
-    \item Negotiate with university officials and campus recreation to approve events
-    \item Interact daily with members to create a fun team environment 
-	\item Manage the team website at \wcfsite
-\end{itemize}
-
-\section{Awards and Honors}
-
-%\entry{}{March 2019}{Texas Instruments 3rd Place High School Award}{}{}
-%\begin{itemize}
-%    \item Awarded at Southern Arizona Research Science and Engineering Foundation
-%\end{itemize}
-\entry{}{2019}{National Merit Hispanic Scholar 2019}{}{}
-
+	\begin{textblock}{6.5}(10.5, 40)
+		\skills
+	\end{textblock}
+	\TPoptions{showboxes=false}
+	\begin{textblock}{10}(0, 1)
+		%Normal experience stuff
+		\section{Experience}
+		\vspace{1em}
+		\entry{\ua}{Jan 2020-\\ Jul 2020}{Symmetry Detection and Classification in Drawings of Graphs}{Research Assistant}{\town}
+		\begin{itemize}
+		   	\item Implemented Graph Neural Networks to classify common and abstract symmetries in graph drawings
+		    	\item Deployed Neural Network models using programs written in collaboration with research team
+		    	\item Utilized High Performance Computing cluster to regularly conduct intensive Neural Network training and prediction experiments
+			\item Applied Linux knowledge to create job scripts with PBS directives
+		\end{itemize}
+		\vspace{\baselineskip}
+		\entry{\ua}{2019-\\ Present}{UA Cybercats}{Member}{\town}
+		\begin{itemize}
+    			\item Participated in hacking competitions and learned about Offensive Security
+			\item Experienced with Kali Linux
+		\end{itemize}
+		\vspace{\baselineskip}
+		\entry{}{2020}{Created Linux Distribution}{Creator of Orlix}{}
+		\begin{itemize}
+        			\item Configured Arch Linux variant featured on \site
+    			\item Designed to be lightweight with emphasis on high-speed development and deployment
+		\end{itemize}
+		\vspace{\baselineskip}
+		\entry{}{2018-Present}{Web Design}{Creator of {\site}}{}
+		\begin{itemize}
+		    	\item Manage both front/back-end with LEMP stack
+		    	\item Feature current projects and link to Github
+		    	\item Frequently publish articles about computer science, statistics, technology, and philosophy
+		\end{itemize}
+		\vspace{\baselineskip}
+		%Leadership experience stuff
+		\section{Leadership Experience}
+		\vspace{1em}
+		\entry{\ua}{2019-Present}{Wildcat Épée Fencing Club}{Secretary}{\town}
+		\begin{itemize}
+   			\item Represent the university by traveling across the country to tournaments 
+   			\item Regularly compile team statistics, track attendance, and handle logistics
+   			\item Negotiate with university officials and campus recreation to approve events
+    			\item Interact daily with members to create a fun team environment 
+			\item Manage the team website at \wcfsite
+		\end{itemize}
+		\vspace{\baselineskip}
+		\entry{\ua}{2019-Present}{Blue Chip Leadership Experience}{Member}{\town}
+		\begin{itemize}
+			\item Participated in leadership training and volunteer activities on campus
+			\item Studied Design Thinking Process in Blue Chip courses, and participated in group projects
+			\item Participated in 2021 Design Thinking Challenge focused on improving healthcare for disabled youth at El Rio Community Health Center
+		\end{itemize}
+	\end{textblock}	
 \end{document}
