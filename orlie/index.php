@@ -56,7 +56,7 @@
 			<section>
 				<h1>School</h1>
 				<ul>
-					<li><a href="articles/getting-into-good-school.php">Getting Into a Good School</a></li>
+					<!--<li><a href="articles/getting-into-good-school.php">Getting Into a Good School</a></li>-->
 					<li><a href="articles/academic-productivity.php">Academic Productivity</a></li>
 				</ul>
 			</section>
